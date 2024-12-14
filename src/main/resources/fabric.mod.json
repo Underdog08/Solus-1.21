@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "solus",
+	"version": "${version}",
+	"name": "Solus",
+	"description": "Too lazy to write anything meaningful here so have this instead...",
+	"authors": [
+		"Underdog"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/solus/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.underdog.Solus"
+		],
+		"fabric-datagen": [
+			"com.underdog.SolusDataGenerator"
+		],
+		"client": [
+			"com.underdog.SolusClient"
+		]
+	},
+	"mixins": [
+		"solus.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
